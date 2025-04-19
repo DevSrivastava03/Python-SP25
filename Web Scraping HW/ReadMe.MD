@@ -1,0 +1,1 @@
+This project is a Python-based web scraper that extracts product data from the Men's Polo Shirts section of the Ralph Lauren website. It gathers details like product name, price, sale price (if available), and image URL, then stores the data in a structured JSON file for easy use in analysis, price tracking, or UI development.

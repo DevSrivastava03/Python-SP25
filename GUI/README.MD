@@ -1,0 +1,1 @@
+This project showcases a deliberately frustrating user experience through a progress bar that endlessly loops from 0% to 99%. Paired with misleading status messages like “Almost there...” and “Nope,” it highlights poor UI/UX practices by simulating a fake loading process that never completes, testing user patience and trust.

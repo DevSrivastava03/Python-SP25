@@ -1,0 +1,112 @@
+@import url("https://use.typekit.net/njf7wir.css");
+
+body {
+  font-family: 'itc-avant-garde-gothic-pro', 'Helvetica Neue', Arial, sans-serif;
+  padding: 2rem;
+  background: linear-gradient(135deg, #ffffff, #90c7fd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  position: fixed;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* 🐾 Float/wiggle animation on hover */
+h2 span {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+h2:hover span {
+  animation: float 0.6s ease;
+}
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  25%  { transform: translateY(-4px) rotate(-4deg); }
+  50%  { transform: translateY(2px) rotate(4deg); }
+  75%  { transform: translateY(-2px) rotate(-2deg); }
+  100% { transform: translateY(0); }
+}
+
+p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #666;
+}
+
+form {
+  margin-bottom: 1.2rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* Shared button style */
+.btn {
+  width: 100%;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 1rem;
+  border: none;
+}
+
+/* Primary Button (Start Chat) */
+.primary-btn {
+  background-color: #72c5b3;
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #5dbca5;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.primary-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* Secondary Button (Anonymous) */
+.secondary-btn {
+  background-color: transparent;
+  color: #72c5b3;
+  border: 2px solid #72c5b3;
+}
+
+.secondary-btn:hover {
+  background-color: #f0fdfa;
+  transform: translateY(-2px);
+}
+
+.secondary-btn:active {
+  transform: scale(0.98);
+}
